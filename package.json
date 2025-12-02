@@ -1,0 +1,10 @@
+{
+  "name": "jessikas-site",
+  "version": "1.0.0",
+  "description": "Jessika Hedman – iOS Notes style landing page",
+  "scripts": {
+    "dev": "live-server ."
+  }
+}
+
+

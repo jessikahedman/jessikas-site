@@ -11,9 +11,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f2f2f7;
+  background: radial-gradient(circle at top, #ffffff 0, #f2f2f7 42%, #e5e5ea 100%);
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui,
     sans-serif;
+  padding: 24px;
 }
 
 .hidden {
@@ -22,9 +23,9 @@ body {
 
 .phone-frame {
   position: relative;
-  width: 360px;
+  width: min(420px, 100%);
   max-width: 100%;
-  height: 740px;
+  height: min(780px, 92vh);
   background: #ffffff;
   border-radius: 40px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 18px 40px rgba(0, 0, 0, 0.18);
@@ -70,6 +71,31 @@ body {
 
 .nav-right {
   letter-spacing: 2px;
+}
+
+.nav-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu-trigger {
+  letter-spacing: 2px;
+}
+
+.nav-select {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-select:focus-visible {
+  outline: none;
 }
 
 .content {
@@ -226,6 +252,7 @@ body {
 @media (max-width: 480px) {
   body {
     align-items: stretch;
+    padding: 0;
   }
 
   .phone-frame {
@@ -235,5 +262,20 @@ body {
     box-shadow: none;
   }
 }
+
+@media (min-width: 900px) {
+  body {
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .phone-frame {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
 
 

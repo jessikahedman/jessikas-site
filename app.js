@@ -98,6 +98,21 @@ document.addEventListener("DOMContentLoaded", () => {
   if (backButton) {
     backButton.addEventListener("click", showListView);
   }
+
+  document.querySelectorAll(".nav-select").forEach((select) => {
+    select.addEventListener("change", (event) => {
+      const value = event.target.value;
+      if (!value) return;
+
+      if (value.startsWith("mailto:") || value.startsWith("tel:")) {
+        window.location.href = value;
+      } else {
+        window.open(value, "_blank", "noopener,noreferrer");
+      }
+
+      event.target.value = "";
+    });
+  });
 });
 
 
