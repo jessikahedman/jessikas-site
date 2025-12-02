@@ -14,13 +14,25 @@ const notes = {
   },
   "learning-in-public": {
     folder: "Thoughts",
-    title: "On learning in public",
-    metaTop: "Ongoing · Notes",
-    metaSecondary: "Thoughts · Writing",
-    body: [
-      "I use this space to collect experiments, small questions, and unfinished ideas.",
-      "",
-      "Shipping before it feels perfect has been the fastest way for me to learn, connect, and find the next step.",
+    title: "Grocery list",
+    metaTop: "Today",
+    metaSecondary: "Thoughts · List",
+    body: "",
+    htmlBody: [
+      "<ul class=\"checklist\">",
+      "  <li class=\"checklist-item checked\"><span class=\"check-bullet\"></span><span class=\"check-text\">Eggs</span></li>",
+      "  <li class=\"checklist-item checked\"><span class=\"check-bullet\"></span><span class=\"check-text\">Potatoes</span></li>",
+      "  <li class=\"checklist-item checked\"><span class=\"check-bullet\"></span><span class=\"check-text\">Garbage bags</span></li>",
+      "  <li class=\"checklist-item checked\"><span class=\"check-bullet\"></span><span class=\"check-text\">Greek yoghurt</span></li>",
+      "  <li class=\"checklist-item checked\"><span class=\"check-bullet\"></span><span class=\"check-text\">1 red onion</span></li>",
+      "  <li class=\"checklist-item checked\"><span class=\"check-bullet\"></span><span class=\"check-text\">Bananas</span></li>",
+      "  <li class=\"checklist-item checked\"><span class=\"check-bullet\"></span><span class=\"check-text\">Strawberry jam</span></li>",
+      "  <li class=\"checklist-item checked\"><span class=\"check-bullet\"></span><span class=\"check-text\">Popcorn</span></li>",
+      "  <li class=\"checklist-item checked\"><span class=\"check-bullet\"></span><span class=\"check-text\">Fuet</span></li>",
+      "  <li class=\"checklist-item checked\"><span class=\"check-bullet\"></span><span class=\"check-text\">Paprika</span></li>",
+      "  <li class=\"checklist-item\"><span class=\"check-bullet\"></span><span class=\"check-text\">Red lentils</span></li>",
+      "  <li class=\"checklist-item\"><span class=\"check-bullet\"></span><span class=\"check-text\">Zucchini</span></li>",
+      "</ul>",
     ].join("\n"),
   },
   "slow-productivity": {
@@ -74,7 +86,12 @@ function showNoteDetail(noteId) {
   titleEl.textContent = note.title;
   metaTopEl.textContent = note.metaTop;
   metaSecondaryEl.textContent = note.metaSecondary;
-  bodyEl.textContent = note.body;
+
+  if (note.htmlBody) {
+    bodyEl.innerHTML = note.htmlBody;
+  } else {
+    bodyEl.textContent = note.body;
+  }
   folderTitleEl.textContent = note.folder;
 
   listView.classList.add("hidden");
