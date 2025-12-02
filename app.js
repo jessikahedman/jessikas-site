@@ -151,6 +151,65 @@ function showListView() {
   listView.classList.remove("hidden");
 }
 
+function filterNotes(searchTerm) {
+  const searchLower = searchTerm.toLowerCase().trim();
+  const noteCards = document.querySelectorAll(".note-card");
+  const sectionGroups = document.querySelectorAll(".section-group");
+
+  if (!searchTerm.trim()) {
+    // Show all notes and sections when search is empty
+    noteCards.forEach((card) => {
+      card.style.display = "";
+    });
+    sectionGroups.forEach((section) => {
+      section.style.display = "";
+    });
+    return;
+  }
+
+  // Hide all sections initially
+  sectionGroups.forEach((section) => {
+    section.style.display = "none";
+  });
+
+  let hasMatches = false;
+
+  noteCards.forEach((card) => {
+    const noteId = card.getAttribute("data-note-id");
+    const note = notes[noteId];
+    if (!note) {
+      card.style.display = "none";
+      return;
+    }
+
+    // Search in title, meta, preview, and body
+    const title = note.title.toLowerCase();
+    const meta = note.metaSecondary?.toLowerCase() || "";
+    const preview = card.querySelector(".note-preview")?.textContent.toLowerCase() || "";
+    const body = note.body?.toLowerCase() || "";
+    const folder = note.folder?.toLowerCase() || "";
+
+    const matches =
+      title.includes(searchLower) ||
+      meta.includes(searchLower) ||
+      preview.includes(searchLower) ||
+      body.includes(searchLower) ||
+      folder.includes(searchLower);
+
+    if (matches) {
+      card.style.display = "";
+      // Show the parent section
+      const section = card.closest(".section-group");
+      if (section) {
+        section.style.display = "";
+        hasMatches = true;
+      }
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".note-card").forEach((card) => {
     const id = card.getAttribute("data-note-id");
@@ -178,6 +237,14 @@ document.addEventListener("DOMContentLoaded", () => {
       event.target.value = "";
     });
   });
+
+  // Search functionality
+  const searchInput = document.getElementById("search-input");
+  if (searchInput) {
+    searchInput.addEventListener("input", (event) => {
+      filterNotes(event.target.value);
+    });
+  }
 });
 
 
