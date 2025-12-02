@@ -18,7 +18,11 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
+}
+
+.phone-frame #detail-view.hidden {
+  display: none !important;
 }
 
 .phone-frame {
