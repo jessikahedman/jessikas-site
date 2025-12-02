@@ -9,9 +9,7 @@ const notes = {
     htmlBody: [
       "Swedish content writer & editor based in Lisbon.",
       "<br><br>",
-      "I combine creative storytelling with smart SEO to help brands grow through content that informs, inspires and performs.",
-      "<br><br>",
-      "Struggling to find the right words? I create website copy, ad copy, blogs, guides, and SEO-friendly content that speaks to your audience.",
+      "Struggling to find the right words? I combine creative storytelling with SEO to help brands grow through compelling website copy, ads, blogs, guides, and other content that truly connects with your audience.",
       "<br><br>",
       '<div class="note-image-container"><img src="about-me-photo.jpg" alt="Jessika Hedman" class="note-image" /></div>',
     ].join(""),
@@ -49,7 +47,7 @@ const notes = {
     body: "",
     htmlBody: [
       "<strong>In 2025</strong>",
-      "<ul style=\"padding-left: 20px; margin-left: 0; margin-top: 4px;\">",
+      "<ul style=\"padding-left: 20px; margin-left: 0; margin-top: 4px; margin-bottom: 8px;\">",
       "  <li>Scarves</li>",
       "  <li>Bob (the hairstyle)</li>",
       "  <li>Religion / spirituality</li>",
@@ -58,7 +56,7 @@ const notes = {
       "  <li>Pubic hair (still in)</li>",
       "  <li>Slow travel</li>",
       "</ul>",
-      "<strong>Out 2025</strong>",
+      "<strong style=\"display: block; margin-top: 0;\">Out 2025</strong>",
       "<ul style=\"padding-left: 20px; margin-left: 0; margin-top: 4px;\">",
       "  <li>Putting yourself first</li>",
       "  <li>Being a DJ</li>",
