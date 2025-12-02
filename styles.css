@@ -505,32 +505,32 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    overflow: hidden;
-    min-height: 0; /* Allows flex children to shrink below content size */
+    flex: 1;
+    min-height: 0;
   }
 
   #detail-view {
     display: flex;
     flex-direction: column;
     height: 100%;
-    overflow: hidden;
-    min-height: 0; /* Allows flex children to shrink below content size */
+    flex: 1;
+    min-height: 0;
   }
 
   .content {
     flex: 1;
-    min-height: 0; /* Allows flex children to shrink below content size */
+    min-height: 0;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    touch-action: pan-y; /* Enable vertical touch scrolling */
+    touch-action: pan-y;
   }
 
   .note-detail {
     flex: 1;
-    min-height: 0; /* Allows flex children to shrink below content size */
+    min-height: 0;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    touch-action: pan-y; /* Enable vertical touch scrolling */
+    touch-action: pan-y;
   }
 }
 

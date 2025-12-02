@@ -91,8 +91,6 @@ const notes = {
     metaSecondary: "Work experience · Selected work",
     body: [
       "A mix of client work, in‑house products, and side projects.",
-      "",
-      "I’m especially proud of the projects where we simplified something complex and made it feel more human.",
     ].join("\n"),
   },
   passwords: {
