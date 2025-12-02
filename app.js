@@ -48,13 +48,13 @@ const notes = {
   },
   "current-role": {
     folder: "Work experience",
-    title: "Current role",
+    title: "What I do",
     metaTop: "Now",
     metaSecondary: "Work experience · Product & development",
     body: [
-      "I work across product, UX, and front‑end – helping teams move from rough idea to something people can actually use.",
+      "I create and optimize website content for a wide range of brands, from startups to established companies, including crypto, sports, and other industries.",
       "",
-      "Day‑to‑day that often looks like sketching, prototyping, pairing with engineers, and iterating in small, shippable steps.",
+      "My work combines creative storytelling with SEO to ensure content is engaging, clear, and effective.",
     ].join("\n"),
   },
   "previous-projects": {
