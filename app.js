@@ -37,7 +37,7 @@ const notes = {
   },
   "slow-productivity": {
     folder: "Thoughts",
-    title: "Betrayal List",
+    title: "Betrayal list",
     metaTop: "Reflection",
     metaSecondary: "Thoughts · List",
     body: [
