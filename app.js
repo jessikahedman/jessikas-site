@@ -2,8 +2,9 @@ const notes = {
   "about-me": {
     folder: "Today",
     title: "About me",
-    metaTop: "Today · 3:12 PM",
-    metaSecondary: "Today · Personal",
+    dateTime: "Today at 3:12 PM",
+    metaTop: "Today at 3:12 PM",
+    metaSecondary: "",
     body: "",
     htmlBody: [
       "Swedish content writer & editor based in Lisbon.",
@@ -18,8 +19,9 @@ const notes = {
   "learning-in-public": {
     folder: "Thoughts",
     title: "Grocery list",
-    metaTop: "Today",
-    metaSecondary: "Thoughts · List",
+    dateTime: "3 December 2024 at 09:15",
+    metaTop: "3 December 2024 at 09:15",
+    metaSecondary: "",
     body: "",
     htmlBody: [
       "<ul class=\"checklist\">",
@@ -41,8 +43,9 @@ const notes = {
   "slow-productivity": {
     folder: "Thoughts",
     title: "Betrayal list",
-    metaTop: "Reflection",
-    metaSecondary: "Thoughts · List",
+    dateTime: "18 January 2025 at 16:47",
+    metaTop: "18 January 2025 at 16:47",
+    metaSecondary: "",
     body: [
       "H&M's fitting room",
       "My left wisdom tooth",
@@ -62,8 +65,9 @@ const notes = {
   "books-to-read": {
     folder: "Thoughts",
     title: "Books people told me to read",
-    metaTop: "This would look really good on paper",
-    metaSecondary: "Thoughts · List",
+    dateTime: "22 March 2025 at 11:23",
+    metaTop: "22 March 2025 at 11:23",
+    metaSecondary: "",
     body: [
       "The Shadow of the Wind",
       "Fresh Water for Flowers",
@@ -79,8 +83,9 @@ const notes = {
   "current-role": {
     folder: "Work experience",
     title: "What I do",
-    metaTop: "Now",
-    metaSecondary: "Work experience · Product & development",
+    dateTime: "8 September 2024 at 13:56",
+    metaTop: "8 September 2024 at 13:56",
+    metaSecondary: "",
     body: [
       "I create, publish and optimize website content for a wide range of brands, from startups to established companies, including crypto, sports, and other industries.",
       "",
@@ -90,8 +95,9 @@ const notes = {
   "previous-projects": {
     folder: "Work experience",
     title: "Previous projects",
-    metaTop: "Highlights",
-    metaSecondary: "Work experience · Selected work",
+    dateTime: "5 October 2024 at 10:08",
+    metaTop: "5 October 2024 at 10:08",
+    metaSecondary: "",
     body: [
       "A mix of client work, in‑house products, and side projects.",
     ].join("\n"),
@@ -99,8 +105,9 @@ const notes = {
   passwords: {
     folder: "Thoughts",
     title: "Passwords",
-    metaTop: "Locked",
-    metaSecondary: "Thoughts · Locked",
+    dateTime: "12 February 2025 at 20:14",
+    metaTop: "12 February 2025 at 20:14",
+    metaSecondary: "",
     body: "",
     locked: true,
   },
@@ -212,9 +219,17 @@ function filterNotes(searchTerm) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Populate note-meta elements with date/time
   document.querySelectorAll(".note-card").forEach((card) => {
     const id = card.getAttribute("data-note-id");
     if (!id) return;
+    const note = notes[id];
+    if (note && note.dateTime) {
+      const metaEl = card.querySelector(".note-meta");
+      if (metaEl) {
+        metaEl.textContent = note.dateTime;
+      }
+    }
     card.style.cursor = "pointer";
     card.addEventListener("click", () => showNoteDetail(id));
   });
