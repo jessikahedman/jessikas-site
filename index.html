@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jessika Hedman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+
+      <!-- List view (folders + notes) -->
+      <div id="list-view">
+        <header class="nav-bar">
+          <div class="nav-left">Folders</div>
+          <div class="nav-title">Jessika Hedman</div>
+          <div class="nav-right">•••</div>
+        </header>
+
+        <main class="content">
+          <section class="search-row">
+            <div class="search-field">Search</div>
+          </section>
+
+          <section class="section-group">
+            <h2 class="section-heading">Today</h2>
+            <article class="note-card pinned" data-note-id="about-me">
+              <div class="note-icon pin"></div>
+              <div class="note-main">
+                <div class="note-title">About me</div>
+                <div class="note-meta">A quick snapshot</div>
+                <div class="note-preview">
+                  Designer & developer based in Sweden, curious about calm,
+                  thoughtful digital experiences.
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="section-group">
+            <h2 class="section-heading">Thoughts</h2>
+
+            <article class="note-card" data-note-id="learning-in-public">
+              <div class="note-main">
+                <div class="note-title">On learning in public</div>
+                <div class="note-meta">Notes · Ongoing</div>
+                <div class="note-preview">
+                  Collecting small experiments, mistakes, and tiny wins from
+                  building things on the web.
+                </div>
+              </div>
+            </article>
+
+            <article class="note-card" data-note-id="slow-productivity">
+              <div class="note-main">
+                <div class="note-title">Slow productivity</div>
+                <div class="note-meta">Notes · Reflection</div>
+                <div class="note-preview">
+                  Exploring how to work with focus, space, and intention instead
+                  of urgency.
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="section-group">
+            <h2 class="section-heading">Work experience</h2>
+
+            <article class="note-card" data-note-id="current-role">
+              <div class="note-main">
+                <div class="note-title">Current role</div>
+                <div class="note-meta">Product & development</div>
+                <div class="note-preview">
+                  Working across design and code to ship interfaces that feel
+                  simple, clear, and kind.
+                </div>
+              </div>
+            </article>
+
+            <article class="note-card" data-note-id="previous-projects">
+              <div class="note-main">
+                <div class="note-title">Previous projects</div>
+                <div class="note-meta">Highlights</div>
+                <div class="note-preview">
+                  A selection of collaborations, prototypes, and side projects
+                  that taught me the most.
+                </div>
+              </div>
+            </article>
+          </section>
+        </main>
+      </div>
+
+      <!-- Single note detail view -->
+      <div id="detail-view" class="hidden">
+        <header class="nav-bar nav-detail">
+          <button class="nav-back" type="button">
+            <span class="chevron">‹</span> All iCloud
+          </button>
+          <div class="nav-title" id="detail-folder-title">Jessika Hedman</div>
+          <div class="nav-right">•••</div>
+        </header>
+
+        <section class="note-detail">
+          <div class="note-detail-inner">
+            <div class="note-detail-meta-top" id="detail-meta-top">
+              Today · 3:12 PM
+            </div>
+            <h1 class="note-detail-title" id="detail-title">Note title</h1>
+            <div class="note-detail-meta" id="detail-meta-secondary">
+              Folder · Time
+            </div>
+            <div class="note-detail-body" id="detail-body">
+              Note content goes here.
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
