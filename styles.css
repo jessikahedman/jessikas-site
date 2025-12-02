@@ -26,7 +26,7 @@ body {
   width: min(420px, 100%);
   max-width: 100%;
   height: min(780px, 92vh);
-  background: #ffffff;
+  background: #f2f2f7;
   border-radius: 40px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 18px 40px rgba(0, 0, 0, 0.18);
   overflow: hidden;
