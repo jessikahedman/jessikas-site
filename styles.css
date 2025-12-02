@@ -108,6 +108,8 @@ body {
   background: #f2f2f7;
   height: calc(100% - 58px);
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 
 .search-row {
@@ -322,6 +324,8 @@ body {
   background: #ffffff;
   height: calc(100% - 58px);
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 
 .note-detail-inner {
@@ -483,13 +487,50 @@ body {
   body {
     align-items: stretch;
     padding: 0;
+    height: 100vh;
+    height: 100dvh; /* Dynamic viewport height for mobile browsers */
   }
 
   .phone-frame {
     height: 100vh;
+    height: 100dvh; /* Dynamic viewport height for mobile browsers */
     width: 100%;
     border-radius: 0;
     box-shadow: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #list-view {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    min-height: 0; /* Allows flex children to shrink below content size */
+  }
+
+  #detail-view {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    min-height: 0; /* Allows flex children to shrink below content size */
+  }
+
+  .content {
+    flex: 1;
+    min-height: 0; /* Allows flex children to shrink below content size */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y; /* Enable vertical touch scrolling */
+  }
+
+  .note-detail {
+    flex: 1;
+    min-height: 0; /* Allows flex children to shrink below content size */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y; /* Enable vertical touch scrolling */
   }
 }
 
