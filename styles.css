@@ -92,6 +92,11 @@ body {
   border: none;
   background: transparent;
   cursor: pointer;
+  white-space: nowrap;
+}
+
+.nav-select option {
+  white-space: nowrap;
 }
 
 .nav-select:focus-visible {
