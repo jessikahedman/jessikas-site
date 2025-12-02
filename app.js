@@ -78,6 +78,14 @@ const notes = {
       "I’m especially proud of the projects where we simplified something complex and made it feel more human.",
     ].join("\n"),
   },
+  passwords: {
+    folder: "Thoughts",
+    title: "Passwords",
+    metaTop: "Locked",
+    metaSecondary: "Thoughts · Locked",
+    body: "",
+    locked: true,
+  },
 };
 
 function showNoteDetail(noteId) {
@@ -93,15 +101,26 @@ function showNoteDetail(noteId) {
   const bodyEl = document.getElementById("detail-body");
   const folderTitleEl = document.getElementById("detail-folder-title");
 
+  detailView.classList.toggle("is-locked-note", !!note.locked);
+
   titleEl.textContent = note.title;
   metaTopEl.textContent = note.metaTop;
   metaSecondaryEl.textContent = note.metaSecondary;
 
-  if (note.htmlBody) {
+  if (note.locked) {
+    bodyEl.innerHTML = [
+      '<div class="locked-note-layout">',
+      '  <div class="locked-note-icon"></div>',
+      '  <div class="locked-note-text">This note is locked.</div>',
+      '  <button class="locked-note-button" type="button">View Note</button>',
+      "</div>",
+    ].join("\n");
+  } else if (note.htmlBody) {
     bodyEl.innerHTML = note.htmlBody;
   } else {
     bodyEl.textContent = note.body;
   }
+
   folderTitleEl.textContent = note.folder;
 
   listView.classList.add("hidden");
