@@ -263,19 +263,3 @@ body {
   }
 }
 
-@media (min-width: 900px) {
-  body {
-    align-items: stretch;
-    padding: 0;
-  }
-
-  .phone-frame {
-    width: 100%;
-    height: 100vh;
-    border-radius: 0;
-    box-shadow: none;
-  }
-}
-
-
-
