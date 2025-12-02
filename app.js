@@ -5,9 +5,11 @@ const notes = {
     metaTop: "Today · 3:12 PM",
     metaSecondary: "Today · Personal",
     body: [
-      "Designer & developer based in Sweden, curious about calm, thoughtful digital experiences.",
+      "Swedish content writer & editor based in Lisbon.",
       "",
-      "I like working in the in‑between of product, design, and engineering – shaping ideas into interfaces that feel simple and kind.",
+      "I blend creative storytelling with smart SEO to help brands grow through content that informs, inspires and performs.",
+      "",
+      "Struggling to find the right words? Let’s craft website copy, blogs, guides and optimized content that works for your audience.",
     ].join("\n"),
   },
   "learning-in-public": {
