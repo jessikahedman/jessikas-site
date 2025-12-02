@@ -17,8 +17,9 @@
       <!-- List view (folders + notes) -->
       <div id="list-view">
         <header class="nav-bar">
-          <div class="nav-left"></div>
-          <div class="nav-title">Jessika Hedman</div>
+          <div class="nav-left">
+            <div class="nav-title">Jessika Hedman</div>
+          </div>
           <div class="nav-right nav-menu">
             <span class="nav-menu-trigger" aria-hidden="true">•••</span>
             <select class="nav-select" aria-label="Contact options">
@@ -45,7 +46,6 @@
           <section class="section-group">
             <h2 class="section-heading">Pinned</h2>
             <article class="note-card pinned" data-note-id="about-me">
-              <div class="note-icon pin"></div>
               <div class="note-main">
                 <div class="note-title">About me</div>
                 <div class="note-meta"></div>
@@ -145,6 +145,16 @@
               </div>
             </article>
 
+            <article class="note-card locked-note-card" data-note-id="its-3am">
+              <div class="note-main">
+                <div class="note-title">
+                  <span class="note-icon lock"></span>It's 3 AM and I miss...
+                </div>
+                <div class="note-meta"></div>
+                <div class="note-preview">This note is locked.</div>
+              </div>
+            </article>
+
             <article class="note-card" data-note-id="what-to-eat-lisbon">
               <div class="note-main">
                 <div class="note-title">What to eat in Lisbon</div>
@@ -199,6 +209,7 @@
     <script src="app.js"></script>
   </body>
 </html>
+
 
 
 

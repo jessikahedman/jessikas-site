@@ -1,6 +1,6 @@
 const notes = {
   "about-me": {
-    folder: "Today",
+    folder: "Pinned",
     title: "About me",
     dateTime: "Today at 3:12 PM",
     metaTop: "Today at 3:12 PM",
@@ -171,6 +171,15 @@ const notes = {
     title: "Passwords",
     dateTime: "12 February 2025 at 20:14",
     metaTop: "12 February 2025 at 20:14",
+    metaSecondary: "",
+    body: "",
+    locked: true,
+  },
+  "its-3am": {
+    folder: "Thoughts",
+    title: "It's 3 AM and I miss...",
+    dateTime: "17 June 2025 at 03:22 AM",
+    metaTop: "17 June 2025 at 03:22 AM",
     metaSecondary: "",
     body: "",
     locked: true,
