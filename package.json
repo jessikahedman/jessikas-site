@@ -4,7 +4,9 @@
   "description": "Jessika Hedman – iOS Notes style landing page",
   "scripts": {
     "dev": "live-server ."
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5",
+    "to-ico": "^1.1.5"
   }
 }
-
-

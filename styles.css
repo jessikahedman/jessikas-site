@@ -185,15 +185,16 @@ body {
 .note-icon.lock::after {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 3px;
   left: 50%;
   transform: translateX(-50%);
   width: 5px;
-  height: 4px;
+  height: 5px;
   border-radius: 3px 3px 0 0;
   border: 1px solid #3a3a3c;
-  border-bottom: none;
+  border-bottom: 1px solid #3a3a3c;
   background: transparent;
+  box-sizing: border-box;
 }
 
 .note-main {
@@ -387,8 +388,8 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 17px;
-  margin-bottom: 2px;
+  font-size: 13px;
+  margin-bottom: 0px;
 }
 
 .check-bullet {
