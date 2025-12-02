@@ -88,7 +88,7 @@ const notes = {
     body: [
       "I create, publish and optimize website content for a wide range of brands, from startups to established companies, including crypto, sports, and other industries.",
       "",
-      "My work combines a feel for voice and tone with a deep understanding of how readers experience content, all thoughtfully supported by research and analysis to make it clear, engaging, and effective.",
+      "My work blends a feel for tone and voice with a sense of how readers actually experience content. I pair this with thoughtful research and analysis to make sure everything I create is as engaging as it is effective.",
     ].join("\n"),
   },
   "previous-projects": {
