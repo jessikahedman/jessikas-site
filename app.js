@@ -51,7 +51,6 @@ const notes = {
       "My left wisdom tooth",
       "Oysters",
       "Any printer",
-      "The guy at the meat counter at my local grocery store",
       "Me on Hinge",
       "Wet cobblestones",
       "Susan Miller",
