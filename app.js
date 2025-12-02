@@ -117,7 +117,7 @@ const notes = {
       "<br><br>",
       "I have held someone's hand, let someone hold me.",
       "<br>",
-      "Big, sparkling waves have washed away my homesickness. I have been writing letters to those I missed in my mind.",
+      "Big, sparkling waves have washed away my homesickness. But I still write letters to those I missed in my mind.",
       "<br><br>",
       "I have done right and wrong. And right again.",
       "<br>",
