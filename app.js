@@ -151,9 +151,9 @@ const notes = {
     metaTop: "8 September 2024 at 13:56",
     metaSecondary: "",
     body: [
-      "I create, publish and optimize website content for a wide range of brands, from startups to established companies, including crypto, sports, and other industries.",
+      "I create, optimize, and publish website content for startups and established companies across a wide range of industries, including crypto, iGaming, and sports.",
       "",
-      "I create content that balances tone and voice with an understanding of how readers actually experience it. Thoughtful research and analysis guide everything I produce, making it both engaging and effective.",
+      "My work reflects a deep understanding of tone and voice while carefully balancing how readers experience content. Thoughtful research and analysis ensure every piece captivates readers and delivers results.",
     ].join("\n"),
   },
   "previous-projects": {

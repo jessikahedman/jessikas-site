@@ -71,9 +71,6 @@ body {
 }
 
 .nav-title {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   font-weight: 700;
   color: #000;
   font-size: 17px;
@@ -81,6 +78,7 @@ body {
 
 .nav-left {
   font-weight: 500;
+  flex: 1;
 }
 
 .nav-right {
@@ -261,16 +259,7 @@ body {
 }
 
 .note-icon.pin {
-  width: 28px;
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.note-icon.pin::before {
-  content: "📌";
-  font-size: 18px;
+  display: none;
 }
 
 .note-icon.lock {
