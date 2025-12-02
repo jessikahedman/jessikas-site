@@ -4,13 +4,16 @@ const notes = {
     title: "About me",
     metaTop: "Today · 3:12 PM",
     metaSecondary: "Today · Personal",
-    body: [
+    body: "",
+    htmlBody: [
       "Swedish content writer & editor based in Lisbon.",
-      "",
+      "<br><br>",
       "I blend creative storytelling with smart SEO to help brands grow through content that informs, inspires and performs.",
-      "",
-      "Struggling to find the right words? Let’s craft website copy, blogs, guides and optimized content that works for your audience.",
-    ].join("\n"),
+      "<br><br>",
+      "Struggling to find the right words? Let's craft website copy, blogs, guides and optimized content that works for your audience.",
+      "<br><br>",
+      '<div class="note-image-container"><img src="about-me-photo.jpg" alt="Jessika Hedman" class="note-image" /></div>',
+    ].join(""),
   },
   "learning-in-public": {
     folder: "Thoughts",

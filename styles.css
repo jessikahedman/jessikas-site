@@ -404,6 +404,18 @@ body {
   white-space: pre-line;
 }
 
+.note-image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.note-image {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+}
+
 /* Locked note detail layout */
 
 #detail-view.is-locked-note .note-detail-inner {
