@@ -52,9 +52,9 @@ const notes = {
     metaTop: "Now",
     metaSecondary: "Work experience · Product & development",
     body: [
-      "I create and optimize website content for a wide range of brands, from startups to established companies, including crypto, sports, and other industries.",
+      "I create, publish and optimize website content for a wide range of brands, from startups to established companies, including crypto, sports, and other industries.",
       "",
-      "My work combines creative storytelling with SEO to ensure content is engaging, clear, and effective.",
+      "My work combines compelling content with SEO to ensure it’s engaging, clear, and drives results.",
     ].join("\n"),
   },
   "previous-projects": {
