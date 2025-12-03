@@ -11,7 +11,7 @@ const notes = {
       "<br><br>",
       "Struggling to find the right words? I combine creative storytelling with SEO to help brands grow through compelling website copy, ad copy, guides, and other content that truly connects with your audience.",
       "<br><br>",
-      '<div class="note-image-container"><img src="about-me-photo.jpg" alt="Jessika Hedman" class="note-image" /></div>',
+      '<div class="note-image-container"><img src="new-about-me-photo.jpg" alt="Jessika Hedman" class="note-image" /></div>',
     ].join(""),
   },
   "learning-in-public": {
