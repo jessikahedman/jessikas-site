@@ -485,6 +485,10 @@ body {
   justify-content: space-between;
 }
 
+#detail-folder-title {
+  display: none;
+}
+
 .nav-back {
   border: none;
   background: none;

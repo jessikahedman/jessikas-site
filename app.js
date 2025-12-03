@@ -278,8 +278,6 @@ function showNoteDetail(noteId) {
     bodyEl.textContent = note.body;
   }
 
-  folderTitleEl.textContent = note.folder;
-
   listView.classList.add("hidden");
   detailView.classList.remove("hidden");
 }
