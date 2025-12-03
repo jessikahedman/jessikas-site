@@ -417,6 +417,81 @@ document.addEventListener("DOMContentLoaded", () => {
       filterNotes(event.target.value);
     });
   }
+
+  // Contact form modal functionality
+  const ctaCard = document.getElementById("cta-card");
+  const contactModal = document.getElementById("contact-modal");
+  const contactModalClose = document.querySelector(".contact-modal-close");
+  const contactModalOverlay = document.querySelector(".contact-modal-overlay");
+  const contactForm = document.getElementById("contact-form");
+
+  function openContactModal() {
+    if (contactModal) {
+      contactModal.classList.remove("hidden");
+      // Prevent body scroll when modal is open
+      document.body.style.overflow = "hidden";
+    }
+  }
+
+  function closeContactModal() {
+    if (contactModal) {
+      contactModal.classList.add("hidden");
+      document.body.style.overflow = "";
+      // Reset form
+      if (contactForm) {
+        contactForm.reset();
+      }
+    }
+  }
+
+  // Open modal when CTA is clicked
+  if (ctaCard) {
+    ctaCard.addEventListener("click", (event) => {
+      event.preventDefault();
+      openContactModal();
+    });
+  }
+
+  // Close modal when close button is clicked
+  if (contactModalClose) {
+    contactModalClose.addEventListener("click", closeContactModal);
+  }
+
+  // Close modal when overlay is clicked
+  if (contactModalOverlay) {
+    contactModalOverlay.addEventListener("click", closeContactModal);
+  }
+
+  // Close modal on Escape key
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && contactModal && !contactModal.classList.contains("hidden")) {
+      closeContactModal();
+    }
+  });
+
+  // Handle form submission
+  if (contactForm) {
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      
+      const name = document.getElementById("contact-name").value;
+      const email = document.getElementById("contact-email").value;
+      const message = document.getElementById("contact-message").value;
+
+      // Create mailto link with form data
+      const subject = encodeURIComponent("Collaboration Inquiry from " + name);
+      const body = encodeURIComponent("Name: " + name + "\n\nEmail: " + email + "\n\nMessage:\n" + message);
+      const mailtoLink = `mailto:jessika.hedman2@gmail.com?subject=${subject}&body=${body}`;
+
+      // Open email client
+      window.location.href = mailtoLink;
+
+      // Close modal after a short delay
+      setTimeout(() => {
+        closeContactModal();
+      }, 100);
+    });
+  }
 });
 
 

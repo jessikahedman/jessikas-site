@@ -752,3 +752,181 @@ body {
   background: #fff4e6; /* Very light orange background */
 }
 
+/* CTA Card styling */
+.note-card.cta-card {
+  background: #ff9500; /* Orange like pinned */
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.note-card.cta-card:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.note-card.cta-card .note-main {
+  color: #fff;
+}
+
+.note-card.cta-card .note-preview {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Contact Form Modal */
+.contact-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-modal.hidden {
+  display: none;
+}
+
+.contact-modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.contact-modal-content {
+  position: relative;
+  background: #ffffff;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.contact-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 16px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact-modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.contact-modal-close {
+  background: none;
+  border: none;
+  font-size: 32px;
+  line-height: 1;
+  color: #8e8e93;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: background-color 0.1s;
+}
+
+.contact-modal-close:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.contact-modal-close:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+  border: 1px solid #d1d1d6;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #000;
+  box-sizing: border-box;
+  transition: border-color 0.1s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #ff9500;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #ff9500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.1s, transform 0.1s;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+}
+
+.form-submit:hover {
+  background: #e68500;
+}
+
+.form-submit:active {
+  transform: scale(0.98);
+  background: #cc7500;
+}
+
+@media (max-width: 480px) {
+  .contact-modal-content {
+    max-width: 100%;
+    border-radius: 16px 16px 0 0;
+    max-height: 85vh;
+  }
+
+  .contact-modal {
+    align-items: flex-end;
+    padding: 0;
+  }
+}
+
