@@ -78,6 +78,13 @@ body {
   font-size: 17px;
 }
 
+.nav-subtitle {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #000;
+  margin-top: 2px;
+}
+
 .nav-left {
   font-weight: 500;
   flex: 1;
@@ -746,10 +753,10 @@ body {
   }
 }
 
-/* Work experience section - light orange background */
+/* Work experience section */
 .note-card[data-note-id="current-role"],
 .note-card[data-note-id="previous-projects"] {
-  background: #fefef8; /* Same color as header */
+  background: #ffffff; /* White background like other notes */
 }
 
 /* CTA Card styling */
