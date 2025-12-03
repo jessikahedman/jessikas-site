@@ -106,8 +106,8 @@ const notes = {
   "layers-of-the-twenties": {
     folder: "Thoughts",
     title: "Layers of the Twenties",
-    dateTime: "Today at 2:34 PM",
-    metaTop: "Today at 2:34 PM",
+    dateTime: "23 July 2020 at 18:47",
+    metaTop: "23 July 2020 at 18:47",
     metaSecondary: "",
     body: "",
     htmlBody: [
