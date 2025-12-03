@@ -2,8 +2,8 @@ const notes = {
   "about-me": {
     folder: "Pinned",
     title: "About me",
-    dateTime: "Today at 3:12 PM",
-    metaTop: "Today at 3:12 PM",
+    dateTime: "Today at 15:12",
+    metaTop: "Today at 15:12",
     metaSecondary: "",
     body: "",
     htmlBody: [
@@ -195,8 +195,8 @@ const notes = {
   "its-3am": {
     folder: "Thoughts",
     title: "It's 3 AM and I miss...",
-    dateTime: "17 June 2025 at 03:22 AM",
-    metaTop: "17 June 2025 at 03:22 AM",
+    dateTime: "17 June 2025 at 03:22",
+    metaTop: "17 June 2025 at 03:22",
     metaSecondary: "",
     body: "",
     locked: true,
@@ -204,8 +204,8 @@ const notes = {
   "what-to-eat-lisbon": {
     folder: "Thoughts",
     title: "What to eat in Lisbon",
-    dateTime: "4 april 2024 at 13.49 PM",
-    metaTop: "4 april 2024 at 13.49 PM",
+    dateTime: "4 April 2024 at 13:49",
+    metaTop: "4 April 2024 at 13:49",
     metaSecondary: "",
     body: "",
     htmlBody: [
