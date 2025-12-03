@@ -137,13 +137,12 @@ body {
 .menu-item {
   display: flex;
   align-items: center;
-  gap: 12px;
   padding: 10px 16px;
   text-decoration: none;
   color: #000;
   font-size: 14px;
   font-weight: 400;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
   transition: background-color 0.1s;
   cursor: pointer;
 }
@@ -169,7 +168,7 @@ body {
   flex: 1;
   color: #000;
   font-weight: 400;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
 }
 
 /* Email icon - envelope */
@@ -539,7 +538,6 @@ body {
   color: #111;
   white-space: pre-line;
   text-align: left;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .note-detail-body > *:not(.note-image-container),
