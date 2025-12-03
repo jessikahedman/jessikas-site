@@ -143,6 +143,8 @@ const notes = {
       "The layers of snow covering my chest<br>",
       "had slowly started to melt.",
     ].join(""),
+    locked: true,
+    password: "korv123",
   },
   "current-role": {
     folder: "Work experience",
@@ -245,6 +247,9 @@ const notes = {
   },
 };
 
+// Track unlocked notes
+const unlockedNotes = new Set();
+
 function showNoteDetail(noteId) {
   const note = notes[noteId];
   if (!note) return;
@@ -258,20 +263,63 @@ function showNoteDetail(noteId) {
   const bodyEl = document.getElementById("detail-body");
   const folderTitleEl = document.getElementById("detail-folder-title");
 
-  detailView.classList.toggle("is-locked-note", !!note.locked);
+  // Check if note is locked and not yet unlocked
+  const isLocked = note.locked && !unlockedNotes.has(noteId);
+  detailView.classList.toggle("is-locked-note", isLocked);
 
   titleEl.textContent = note.title;
   metaTopEl.textContent = note.metaTop;
   metaSecondaryEl.textContent = note.metaSecondary;
 
-  if (note.locked) {
-    bodyEl.innerHTML = [
-      '<div class="locked-note-layout">',
-      '  <div class="locked-note-icon"></div>',
-      '  <div class="locked-note-text">This note is locked.</div>',
-      '  <button class="locked-note-button" type="button">View Note</button>',
-      "</div>",
-    ].join("\n");
+  if (isLocked) {
+    // Show password input if note has a password
+    if (note.password) {
+      bodyEl.innerHTML = [
+        '<div class="locked-note-layout">',
+        '  <div class="locked-note-icon"></div>',
+        '  <div class="locked-note-text">This note is locked.</div>',
+        '  <div class="password-input-container">',
+        '    <input type="password" class="password-input" placeholder="Enter password" id="note-password-input" />',
+        '    <button class="locked-note-button" type="button" id="unlock-note-button">View Note</button>',
+        '    <div class="password-error" id="password-error" style="display: none; color: #ff3b30; font-size: 14px; margin-top: 8px;">Incorrect password</div>',
+        '  </div>',
+        "</div>",
+      ].join("\n");
+
+      // Add event listener for password submission
+      const passwordInput = document.getElementById("note-password-input");
+      const unlockButton = document.getElementById("unlock-note-button");
+      const passwordError = document.getElementById("password-error");
+
+      function checkPassword() {
+        const enteredPassword = passwordInput.value;
+        if (enteredPassword === note.password) {
+          unlockedNotes.add(noteId);
+          passwordError.style.display = "none";
+          // Re-render the note content
+          showNoteDetail(noteId);
+        } else {
+          passwordError.style.display = "block";
+          passwordInput.value = "";
+        }
+      }
+
+      unlockButton.addEventListener("click", checkPassword);
+      passwordInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          checkPassword();
+        }
+      });
+    } else {
+      // No password, show standard locked view
+      bodyEl.innerHTML = [
+        '<div class="locked-note-layout">',
+        '  <div class="locked-note-icon"></div>',
+        '  <div class="locked-note-text">This note is locked.</div>',
+        '  <button class="locked-note-button" type="button">View Note</button>',
+        "</div>",
+      ].join("\n");
+    }
   } else if (note.htmlBody) {
     bodyEl.innerHTML = note.htmlBody;
   } else {
