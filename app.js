@@ -158,13 +158,30 @@ const notes = {
   },
   "previous-projects": {
     folder: "Work experience",
-    title: "Previous projects",
+    title: "Things and tools I am good with",
     dateTime: "5 October 2024 at 10:08",
     metaTop: "5 October 2024 at 10:08",
     metaSecondary: "",
-    body: [
-      "A mix of client work, in‑house products, and side projects.",
-    ].join("\n"),
+    body: "",
+    htmlBody: [
+      "<strong>Content & Copywriting</strong><br>",
+      "Content creation<br>",
+      "Content auditing & optimization<br>",
+      "On-page SEO<br>",
+      "Translation<br>",
+      "<br>",
+      "<strong>Web & Digital Platforms</strong><br>",
+      "Web editing<br>",
+      "WordPress<br>",
+      "Basic HTML<br>",
+      "Canva<br>",
+      "JIRA<br>",
+      "<br>",
+      "<strong>Marketing & Analytics</strong><br>",
+      "Digital marketing<br>",
+      "Content analytics & performance monitoring<br>",
+      "Email marketing tools",
+    ].join(""),
   },
   passwords: {
     folder: "Thoughts",
@@ -346,19 +363,43 @@ document.addEventListener("DOMContentLoaded", () => {
     backButton.addEventListener("click", showListView);
   }
 
-  document.querySelectorAll(".nav-select").forEach((select) => {
-    select.addEventListener("change", (event) => {
-      const value = event.target.value;
-      if (!value) return;
-
-      if (value.startsWith("mailto:") || value.startsWith("tel:")) {
-        window.location.href = value;
-      } else {
-        window.open(value, "_blank", "noopener,noreferrer");
+  // Menu toggle functionality
+  document.querySelectorAll(".nav-menu-trigger").forEach((trigger) => {
+    trigger.addEventListener("click", (event) => {
+      event.stopPropagation();
+      event.preventDefault();
+      const menu = trigger.nextElementSibling;
+      if (!menu || !menu.classList.contains("nav-menu-dropdown")) return;
+      
+      const isActive = menu.classList.contains("active");
+      
+      // Close all menus first
+      document.querySelectorAll(".nav-menu-dropdown").forEach((dropdown) => {
+        dropdown.classList.remove("active");
+      });
+      
+      // Toggle the clicked menu
+      if (!isActive) {
+        menu.classList.add("active");
       }
-
-      event.target.value = "";
     });
+  });
+
+  // Close menu when clicking on a menu item or outside
+  document.querySelectorAll(".menu-item").forEach((item) => {
+    item.addEventListener("click", () => {
+      document.querySelectorAll(".nav-menu-dropdown").forEach((dropdown) => {
+        dropdown.classList.remove("active");
+      });
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".nav-menu")) {
+      document.querySelectorAll(".nav-menu-dropdown").forEach((dropdown) => {
+        dropdown.classList.remove("active");
+      });
+    }
   });
 
   // Search functionality
