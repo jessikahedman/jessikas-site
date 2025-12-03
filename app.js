@@ -343,6 +343,27 @@ function showListView() {
   listView.classList.remove("hidden");
 }
 
+function updateNoteCount() {
+  const noteCountEl = document.getElementById("note-count");
+  if (!noteCountEl) return;
+
+  // Count all visible note cards with data-note-id (excluding CTA card)
+  const noteCards = document.querySelectorAll(".note-card[data-note-id]");
+  let visibleCount = 0;
+  
+  noteCards.forEach((card) => {
+    // Check if card is visible (not hidden by display: none)
+    const style = window.getComputedStyle(card);
+    if (style.display !== "none" && style.visibility !== "hidden") {
+      visibleCount++;
+    }
+  });
+
+  // Update the count text
+  const noteText = visibleCount === 1 ? "Note" : "Notes";
+  noteCountEl.textContent = `${visibleCount} ${noteText}`;
+}
+
 function filterNotes(searchTerm) {
   const searchLower = searchTerm.toLowerCase().trim();
   const noteCards = document.querySelectorAll(".note-card");
@@ -356,6 +377,7 @@ function filterNotes(searchTerm) {
     sectionGroups.forEach((section) => {
       section.style.display = "";
     });
+    updateNoteCount();
     return;
   }
 
@@ -400,6 +422,8 @@ function filterNotes(searchTerm) {
       card.style.display = "none";
     }
   });
+
+  updateNoteCount();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -417,6 +441,9 @@ document.addEventListener("DOMContentLoaded", () => {
     card.style.cursor = "pointer";
     card.addEventListener("click", () => showNoteDetail(id));
   });
+
+  // Initialize note count
+  updateNoteCount();
 
   const backButton = document.querySelector(".nav-back");
   if (backButton) {
