@@ -524,6 +524,7 @@ body {
 
 .note-detail-inner {
   padding: 18px 18px 40px;
+  text-align: left;
 }
 
 .note-detail-meta-top {
@@ -549,12 +550,24 @@ body {
   line-height: 1.5;
   color: #111;
   white-space: pre-line;
+  text-align: left;
+}
+
+.note-detail-body > *:not(.note-image-container),
+.note-detail-body p,
+.note-detail-body ul,
+.note-detail-body ol,
+.note-detail-body li,
+.note-detail-body strong,
+.note-detail-body div:not(.note-image-container) {
+  text-align: left;
 }
 
 .note-image-container {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  text-align: center;
 }
 
 .note-image {
@@ -586,6 +599,27 @@ body {
 
 #detail-view.is-locked-note .note-detail-body {
   white-space: normal;
+  text-align: center;
+}
+
+/* Ensure unlocked notes are left-aligned */
+#detail-view:not(.is-locked-note) .note-detail-inner {
+  text-align: left !important;
+}
+
+#detail-view:not(.is-locked-note) .note-detail-body {
+  text-align: left !important;
+}
+
+#detail-view:not(.is-locked-note) .note-detail-body > *:not(.note-image-container),
+#detail-view:not(.is-locked-note) .note-detail-body ul,
+#detail-view:not(.is-locked-note) .note-detail-body ol,
+#detail-view:not(.is-locked-note) .note-detail-body li,
+#detail-view:not(.is-locked-note) .note-detail-body strong,
+#detail-view:not(.is-locked-note) .note-detail-body p,
+#detail-view:not(.is-locked-note) .note-detail-body div:not(.note-image-container),
+#detail-view:not(.is-locked-note) .note-detail-body span {
+  text-align: left !important;
 }
 
 .locked-note-layout {
@@ -687,6 +721,7 @@ body {
 .checklist {
   list-style: none;
   padding-left: 0;
+  text-align: left !important;
 }
 
 .checklist-item {
@@ -697,6 +732,8 @@ body {
   margin-bottom: 0px;
   line-height: 0.9;
   margin-top: -6px;
+  text-align: left !important;
+  justify-content: flex-start !important;
 }
 
 .check-bullet {
@@ -724,6 +761,7 @@ body {
 
 .check-text {
   flex: 1;
+  text-align: left !important;
 }
 
 @media (max-width: 480px) {

@@ -265,7 +265,13 @@ function showNoteDetail(noteId) {
 
   // Check if note is locked and not yet unlocked
   const isLocked = note.locked && !unlockedNotes.has(noteId);
-  detailView.classList.toggle("is-locked-note", isLocked);
+  
+  // Explicitly add or remove the class to ensure correct state
+  if (isLocked) {
+    detailView.classList.add("is-locked-note");
+  } else {
+    detailView.classList.remove("is-locked-note");
+  }
 
   titleEl.textContent = note.title;
   metaTopEl.textContent = note.metaTop;
