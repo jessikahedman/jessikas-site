@@ -746,3 +746,9 @@ body {
   }
 }
 
+/* Work experience section - light orange background */
+.note-card[data-note-id="current-role"],
+.note-card[data-note-id="previous-projects"] {
+  background: #fff4e6; /* Very light orange background */
+}
+
