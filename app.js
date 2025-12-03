@@ -235,6 +235,14 @@ const notes = {
       "Senhor Uva (also good food)",
     ].join(""),
   },
+  "dentalcare-clinic": {
+    folder: "Thoughts",
+    title: "Dentalcare Clinic",
+    dateTime: "1 November 2025 at 14:33",
+    metaTop: "1 November 2025 at 14:33",
+    metaSecondary: "",
+    body: "Dentist appointment 3:00 PM\n\nWednesday?? Double-check the date\n\nBring insurance card",
+  },
 };
 
 function showNoteDetail(noteId) {
