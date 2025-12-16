@@ -558,8 +558,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const message = document.getElementById("contact-message").value;
 
       // Create mailto link with form data
-      const subject = encodeURIComponent("Collaboration Inquiry from " + name);
-      const body = encodeURIComponent("Name: " + name + "\n\nEmail: " + email + "\n\nMessage:\n" + message);
+      const subject = encodeURIComponent("Collaboration Inquiry");
+      const body = encodeURIComponent(message);
       const mailtoLink = `mailto:jessika.hedman2@gmail.com?subject=${subject}&body=${body}`;
 
       // Open email client
