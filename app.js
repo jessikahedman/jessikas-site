@@ -185,6 +185,14 @@ const notes = {
       "Email marketing tools (Sendinblue, Mailchimp)",
     ].join(""),
   },
+  "previous-work": {
+    folder: "Work experience",
+    title: "Previous work",
+    dateTime: "Today at 15:12",
+    metaTop: "Today at 15:12",
+    metaSecondary: "",
+    body: "",
+  },
   passwords: {
     folder: "My notes",
     title: "Passwords",
