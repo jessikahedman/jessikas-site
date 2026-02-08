@@ -7,9 +7,9 @@ const notes = {
     metaSecondary: "",
     body: "",
     htmlBody: [
-      "Swedish content writer & editor based in Lisbon.",
+      "Originally from northern Sweden, I just wrapped up a few years in Lisbon and am excited to start a new chapter in Copenhagen. I love stories in all shapes and forms, and luckily I get to spend my days helping brands tell theirs – writing website copy, guides, ads, and other content that actually connects with people. Off the clock, I enjoy oversharing over home-cooked meals with friends, binge-watching a good show, or cheering on my football team.",
       "<br><br>",
-      "Struggling to find the right words? I combine creative storytelling with SEO to help brands grow through compelling website copy, ad copy, guides, and other content that truly connects with your audience.",
+      "This is my little corner to share thoughts, previous work, ideas, and things I find interesting.",
       "<br><br>",
       '<div class="note-image-container"><img src="new-about-me-photo.jpg" alt="Jessika Hedman" class="note-image" /></div>',
     ].join(""),
