@@ -129,7 +129,7 @@ const notes = {
     body: [
       "I create and publish website content for startups and established companies across all sorts of industries, from crypto and iGaming to sports.",
       "",
-      "I care a lot about tone and voice, and about making sure every piece of content feels natural, readable, and genuinely connects with your audience. A little research, a bit of strategy, and plenty of attention to detail go into every piece to make sure it both captivates and delivers.",
+      "I care a lot about tone and voice, and strive to make sure every piece of content feels natural and genuinely connects with your audience. A little research, a bit of strategy, and plenty of attention to detail go into every piece to make sure it both captivates and delivers.",
       "",
       "Struggling to find the right words? Send me a message and we'll turn your ideas into copy that performs.",
     ].join("\n"),
