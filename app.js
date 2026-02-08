@@ -514,15 +514,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Instagram CTA card - open profile in new tab
-  const instagramCard = document.getElementById("instagram-cta-card");
-  if (instagramCard) {
-    instagramCard.addEventListener("click", (e) => {
-      e.preventDefault();
-      window.open("https://instagram.com/jessika_tibia", "_blank", "noopener,noreferrer");
-    });
-  }
-
   // Close modal when close button is clicked
   if (contactModalClose) {
     contactModalClose.addEventListener("click", closeContactModal);
