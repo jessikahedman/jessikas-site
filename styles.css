@@ -398,6 +398,13 @@ body {
   display: none;
 }
 
+.note-card.pinned .note-icon.pin {
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+  font-style: normal;
+}
+
 .note-icon.lock {
   display: inline-block;
   width: 10px;

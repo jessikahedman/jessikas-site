@@ -104,6 +104,22 @@ const notes = {
       "Body double",
     ].join("\n"),
   },
+  "karaoke-bangers": {
+    folder: "Personal notes",
+    title: "Karaoke bangers",
+    dateTime: "8 February 2025 at 21:00",
+    metaTop: "8 February 2025 at 21:00",
+    metaSecondary: "",
+    body: [
+      "High all the time to get you off my mind",
+      "OoOo",
+      "All the things she said",
+      "If it makes you happy",
+      "Pink pony club",
+      "Trädgården en fredag",
+      "Les démons de minuit",
+    ].join("\n"),
+  },
   "current-role": {
     folder: "Work experience",
     title: "What I do",
@@ -219,6 +235,14 @@ const notes = {
     metaTop: "1 November 2025 at 14:33",
     metaSecondary: "",
     body: "Dentist appointment 3:00 PM\n\nWednesday?? Double-check the date\n\nBring insurance card",
+  },
+  "thought-male-loneliness-keto": {
+    folder: "Personal notes",
+    title: "The cure for male loneliness...",
+    dateTime: "8 February 2025 at 14:30",
+    metaTop: "8 February 2025 at 14:30",
+    metaSecondary: "",
+    body: "The cure for male loneliness starts with quitting keto. No man should have to quote Jordan Peterson on an empty stomach",
   },
   "lasagna-recipe": {
     folder: "Personal notes",
