@@ -11,7 +11,7 @@ const notes = {
       "<br><br>",
       "Off the clock, I enjoy oversharing over home-cooked meals with friends, binge-watching a good show, or cheering on my football team.",
       "<br><br>",
-      "This is my little corner to share thoughts, previous work, ideas, and things I find interesting.",
+      "This is my little corner to share thoughts, previous work, and new ideas.",
       "<br><br>",
       '<div class="note-image-container"><img src="new-about-me-photo.jpg" alt="Jessika Hedman" class="note-image" /></div>',
     ].join(""),
