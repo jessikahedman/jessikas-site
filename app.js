@@ -175,7 +175,7 @@ const notes = {
     dateTime: "8 February 2025 at 14:22",
     metaTop: "8 February 2025 at 14:22",
     metaSecondary: "",
-    body: "The feminine urge to have a diet consisting of snus, raw bell pepper, and fuet.",
+    body: "The feminine urge to have a diet consisting of snus, raw bell pepper, and fuet",
   },
   "thought-potato-steam": {
     folder: "Personal notes",
