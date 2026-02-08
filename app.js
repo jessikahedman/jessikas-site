@@ -7,7 +7,9 @@ const notes = {
     metaSecondary: "",
     body: "",
     htmlBody: [
-      "Originally from northern Sweden, I just wrapped up a few years in Lisbon and am excited to start a new chapter in Copenhagen. I love stories in all shapes and forms, and luckily I get to spend my days helping brands tell theirs – writing website copy, guides, ads, and other content that actually connects with people. Off the clock, I enjoy oversharing over home-cooked meals with friends, binge-watching a good show, or cheering on my football team.",
+      "Originally from northern Sweden, I just wrapped up a few years in Lisbon and am excited to start a new chapter in Copenhagen. I love stories in all shapes and forms, and luckily I get to spend my days helping brands tell theirs – writing website copy, guides, ads, and other content that actually connects with people.",
+      "<br><br>",
+      "Off the clock, I enjoy oversharing over home-cooked meals with friends, binge-watching a good show, or cheering on my football team.",
       "<br><br>",
       "This is my little corner to share thoughts, previous work, ideas, and things I find interesting.",
       "<br><br>",
@@ -109,9 +111,11 @@ const notes = {
     metaTop: "8 September 2024 at 13:56",
     metaSecondary: "",
     body: [
-      "I create, optimize, and publish website content for startups and established companies across a wide range of industries, including crypto, iGaming, and sports.",
+      "I create and publish website content for startups and established companies across all sorts of industries, from crypto and iGaming to sports.",
       "",
-      "My work reflects a deep understanding of tone and voice while carefully balancing how readers experience content. Thoughtful research and analysis ensure every piece captivates readers and delivers results.",
+      "I care a lot about tone and voice, and about making sure every piece of content feels natural, readable, and genuinely connects with your audience. A little research, a bit of strategy, and plenty of attention to detail go into every piece to make sure it both captivates and delivers.",
+      "",
+      "Struggling to find the right words? Send me a message and we'll turn your ideas into copy that performs.",
     ].join("\n"),
   },
   "previous-projects": {
