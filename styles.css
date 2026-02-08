@@ -553,6 +553,14 @@ body {
   text-align: left;
 }
 
+/* Align list with paragraph text (same left edge) */
+.note-detail-body ol,
+.note-detail-body ul {
+  padding-left: 0;
+  margin-left: 0;
+  list-style-position: inside;
+}
+
 .note-image-container {
   display: flex;
   justify-content: center;
