@@ -49,7 +49,7 @@ const notes = {
       "<strong>In 2025</strong><br>",
       "Scarves<br>",
       "Bob (the hairstyle)<br>",
-      "Keeping your wisdom teeth<br>",
+      "Thigh muscles<br>",
       "Being a couch potato<br>",
       "Pubic hair (still in)<br>",
       "Slow travel<br>",
