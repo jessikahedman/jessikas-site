@@ -153,6 +153,22 @@ const notes = {
     body: "",
     locked: true,
   },
+  "thought-feminine-urge-diet": {
+    folder: "Personal notes",
+    title: "The feminine urge to have...",
+    dateTime: "8 February 2025 at 14:22",
+    metaTop: "8 February 2025 at 14:22",
+    metaSecondary: "",
+    body: "The feminine urge to have a diet consisting of snus, raw bell pepper, and fuet.",
+  },
+  "thought-potato-steam": {
+    folder: "Personal notes",
+    title: "Why bother with a skincare routine...",
+    dateTime: "8 February 2025 at 14:35",
+    metaTop: "8 February 2025 at 14:35",
+    metaSecondary: "",
+    body: "Why bother with a skincare routine when you can just boil potatoes once a month and stand a little too close to the steam",
+  },
   "its-3am": {
     folder: "Personal notes",
     title: "It's 3 AM and I miss...",
