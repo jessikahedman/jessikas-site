@@ -15,7 +15,7 @@ const notes = {
     ].join(""),
   },
   "learning-in-public": {
-    folder: "My notes",
+    folder: "Personal notes",
     title: "Grocery list",
     dateTime: "3 December 2024 at 09:15",
     metaTop: "3 December 2024 at 09:15",
@@ -39,7 +39,7 @@ const notes = {
     ].join("\n"),
   },
   "ins-and-outs": {
-    folder: "My notes",
+    folder: "Personal notes",
     title: "Ins and Outs",
     dateTime: "31 December 2024 at 23:44",
     metaTop: "31 December 2024 at 23:44",
@@ -64,7 +64,7 @@ const notes = {
     ].join(""),
   },
   "slow-productivity": {
-    folder: "My notes",
+    folder: "Personal notes",
     title: "Betrayal list",
     dateTime: "18 January 2025 at 16:47",
     metaTop: "18 January 2025 at 16:47",
@@ -85,7 +85,7 @@ const notes = {
     ].join("\n"),
   },
   "books-to-read": {
-    folder: "My notes",
+    folder: "Personal notes",
     title: "Books people told me to read",
     dateTime: "22 March 2025 at 11:23",
     metaTop: "22 March 2025 at 11:23",
@@ -140,7 +140,7 @@ const notes = {
     ].join(""),
   },
   passwords: {
-    folder: "My notes",
+    folder: "Personal notes",
     title: "Passwords",
     dateTime: "12 February 2025 at 20:14",
     metaTop: "12 February 2025 at 20:14",
@@ -149,7 +149,7 @@ const notes = {
     locked: true,
   },
   "its-3am": {
-    folder: "My notes",
+    folder: "Personal notes",
     title: "It's 3 AM and I miss...",
     dateTime: "17 June 2025 at 03:22",
     metaTop: "17 June 2025 at 03:22",
@@ -158,7 +158,7 @@ const notes = {
     locked: true,
   },
   "what-to-eat-lisbon": {
-    folder: "My notes",
+    folder: "Personal notes",
     title: "What to eat in Lisbon",
     dateTime: "4 April 2024 at 13:49",
     metaTop: "4 April 2024 at 13:49",
@@ -192,7 +192,7 @@ const notes = {
     ].join(""),
   },
   "dentalcare-clinic": {
-    folder: "My notes",
+    folder: "Personal notes",
     title: "Dentalcare Clinic",
     dateTime: "1 November 2025 at 14:33",
     metaTop: "1 November 2025 at 14:33",
@@ -200,7 +200,7 @@ const notes = {
     body: "Dentist appointment 3:00 PM\n\nWednesday?? Double-check the date\n\nBring insurance card",
   },
   "lasagna-recipe": {
-    folder: "My notes",
+    folder: "Personal notes",
     title: "Lasagna recipe",
     dateTime: "8 February 2025 at 12:00",
     metaTop: "8 February 2025 at 12:00",
