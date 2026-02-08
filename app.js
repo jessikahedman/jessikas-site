@@ -7,7 +7,7 @@ const notes = {
     metaSecondary: "",
     body: "",
     htmlBody: [
-      "Originally from northern Sweden, I just wrapped up a few years in Lisbon and am excited to start a new chapter in Copenhagen. I love stories in all shapes and forms, and luckily I get to spend my days helping brands tell theirs – writing website copy, guides, ads, and other content that actually connects with people.",
+      "Originally from northern Sweden, I just wrapped up a few years in Lisbon and am excited to start a new chapter in Copenhagen. I love stories in all shapes and forms, and luckily I get to spend my days helping brands tell theirs.",
       "<br><br>",
       "Off the clock, I enjoy oversharing over home-cooked meals with friends, binge-watching a good show, or cheering on my football team.",
       "<br><br>",
