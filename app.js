@@ -276,6 +276,11 @@ const unlockedNotes = new Set();
 function showNoteDetail(noteId) {
   const note = notes[noteId];
   if (!note) return;
+  
+  // Prevent opening the lasagna note
+  if (noteId === "lasagna-recipe") {
+    return;
+  }
 
   const listView = document.getElementById("list-view");
   const detailView = document.getElementById("detail-view");
