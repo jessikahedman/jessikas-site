@@ -197,8 +197,8 @@ function showNoteDetail(noteId) {
   const note = notes[noteId];
   if (!note) return;
   
-  // Prevent opening the lasagna note
-  if (noteId === "lasagna-recipe") {
+  // Keep these notes in the list but don't open them
+  if (noteId === "lasagna-recipe" || noteId === "about-me") {
     return;
   }
 
