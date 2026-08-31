@@ -7,12 +7,6 @@ const notes = {
     metaSecondary: "",
     body: "",
     htmlBody: [
-      "Originally from northern Sweden, I just wrapped up a few years in Lisbon and am excited to start a new chapter in Copenhagen. I love stories in all shapes and forms, and luckily I get to spend my days helping brands tell theirs.",
-      "<br><br>",
-      "Off the clock, I enjoy oversharing over home-cooked meals with friends, binge-watching a good show, or cheering on my football team.",
-      "<br><br>",
-      "This is my little corner to share thoughts, previous work, and new ideas.",
-      "<br><br>",
       '<div class="note-image-container"><img src="new-about-me-photo.jpg" alt="Jessika Hedman" class="note-image" /></div>',
     ].join(""),
   },
@@ -104,46 +98,6 @@ const notes = {
       "Body double",
     ].join("\n"),
   },
-  "current-role": {
-    folder: "Work experience",
-    title: "What I do",
-    dateTime: "8 September 2024 at 13:56",
-    metaTop: "8 September 2024 at 13:56",
-    metaSecondary: "",
-    body: [
-      "I create and publish website content for startups and established companies across all sorts of industries, from crypto and iGaming to sports.",
-      "",
-      "I care a lot about tone and voice, which ensures everything I create feels natural and genuinely connects with your audience.",
-      "",
-      "Struggling to find the right words? Send me a message and we'll turn your ideas into copy that performs.",
-    ].join("\n"),
-  },
-  "previous-projects": {
-    folder: "Work experience",
-    title: "Things and tools I am good with",
-    dateTime: "5 October 2024 at 10:08",
-    metaTop: "5 October 2024 at 10:08",
-    metaSecondary: "",
-    body: "",
-    htmlBody: [
-      "<strong>Copywriting & Content</strong><br>",
-      "Creative writing<br>",
-      "Content creation<br>",
-      "Auditing & optimization<br>",
-      "On-page SEO<br>",
-      "<br>",
-      "<strong>Web & Digital Platforms</strong><br>",
-      "WordPress<br>",
-      "HTML<br>",
-      "Ahrefs & Semrush<br>",
-      "Cursor<br>",
-      "<br>",
-      "<strong>Marketing & Analytics</strong><br>",
-      "Digital marketing<br>",
-      "Email marketing solutions<br>",
-      "Performance monitoring & analytics",
-    ].join(""),
-  },
   passwords: {
     folder: "Personal notes",
     title: "Passwords",
@@ -194,47 +148,13 @@ const notes = {
     body: "",
     locked: true,
   },
-  "what-to-eat-lisbon": {
-    folder: "Personal notes",
-    title: "What to eat in Lisbon",
-    dateTime: "4 April 2024 at 13:49",
-    metaTop: "4 April 2024 at 13:49",
-    metaSecondary: "",
-    body: "",
-    htmlBody: [
-      "<strong>Lunch:</strong><br>",
-      "Panda Cantina (Pick the fried tofu)<br>",
-      "O Satélite (typical Portuguese food. Try a bitoque com molho or secretos de porco)<br>",
-      "Java Rooftop (cute rooftop. Decent food, good drinks)<br>",
-      "<br>",
-      "<strong>Dinner:</strong><br>",
-      "Lero Lero (Lisbon's best pizza. Get the Piccante!!! They also have a great selection of wines)<br>",
-      "Da Noi (intimate, good food)<br>",
-      "Rosamar (seafood, nice place, good drinks. I always order at least one espresso martini)<br>",
-      "Bar Alimentar<br>",
-      "Skizzo<br>",
-      "Familjen (had a bad oyster here… still worth it.)<br>",
-      "O Velho Eurico<br>",
-      "Magnolia (wine + nice food). There are several good spots nearby to have a drink before or after.<br>",
-      "<br>",
-      "<strong>Wine:</strong><br>",
-      "Tati Tati (also good food)<br>",
-      "A Viagem das Horas<br>",
-      "Vino Vero<br>",
-      "Bom Bom Bom<br>",
-      "NATA<br>",
-      "Magnolia (try the baked Brie)<br>",
-      "Black Sheep (take your glass to the park)<br>",
-      "Senhor Uva (also good food)",
-    ].join(""),
-  },
   "dentalcare-clinic": {
     folder: "Personal notes",
     title: "Dentalcare Clinic",
     dateTime: "1 November 2025 at 14:33",
     metaTop: "1 November 2025 at 14:33",
     metaSecondary: "",
-    body: "Dentist appointment 3:00 PM\n\nWednesday?? Double-check the date\n\nBring insurance card",
+    body: "Dentist appointment 3:00 PM\n\nBring insurance card",
   },
   "thought-male-loneliness-keto": {
     folder: "Personal notes",
@@ -526,7 +446,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Contact form modal functionality
-  const ctaCard = document.getElementById("cta-card");
   const contactModal = document.getElementById("contact-modal");
   const contactModalClose = document.querySelector(".contact-modal-close");
   const contactModalOverlay = document.querySelector(".contact-modal-overlay");
@@ -549,14 +468,6 @@ document.addEventListener("DOMContentLoaded", () => {
         contactForm.reset();
       }
     }
-  }
-
-  // Open modal when CTA is clicked
-  if (ctaCard) {
-    ctaCard.addEventListener("click", (event) => {
-      event.preventDefault();
-      openContactModal();
-    });
   }
 
   // Close modal when close button is clicked

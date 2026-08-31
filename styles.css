@@ -835,33 +835,6 @@ body {
   }
 }
 
-/* Work experience section */
-.note-card[data-note-id="current-role"],
-.note-card[data-note-id="previous-projects"] {
-  background: #ffffff; /* White background like other notes */
-}
-
-/* CTA Card styling */
-.note-card.cta-card {
-  background: #ff9500; /* Orange like pinned */
-  color: #fff;
-  cursor: pointer;
-  transition: transform 0.1s, box-shadow 0.1s;
-}
-
-.note-card.cta-card:active {
-  transform: scale(0.98);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-.note-card.cta-card .note-main {
-  color: #fff;
-}
-
-.note-card.cta-card .note-preview {
-  color: rgba(255, 255, 255, 0.95);
-}
-
 /* Contact Form Modal */
 .contact-modal {
   position: fixed;
